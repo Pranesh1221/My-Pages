@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link href="http://fonts.cdnfonts.com/css/baloo-bhai" rel="stylesheet" />
+    <style>
+      body {
+        margin: 0px;
+        padding: 0px;
+        background: url("https://test1.thkms.org.sg/wp-content/uploads/2016/05/yoga_1920x1080.jpg");
+      }
+
+      .left {
+        top: 45px;
+        left: 30px;
+        position: absolute;
+        display: inline-block;
+      }
+
+      .mid {
+        font-family: "Baloo Bhai", sans-serif;
+
+        border: 1px solid;
+        margin: 30px auto;
+        width: 50%;
+        border-radius: 20px;
+      }
+
+      .right {
+        top: 45px;
+        right: 30px;
+        position: absolute;
+        display: inline-block;
+
+        border-radius: 20px;
+      }
+
+      .navbar li a {
+        color: rgb(52, 15, 15);
+        font-size: larger;
+        text-decoration: none;
+        padding: 20px 30px;
+      }
+
+      .navbar li {
+        list-style: none;
+      }
+      .navbar {
+        display: flex;
+        justify-content: space-between;
+      }
+
+      .navbar li a:hover {
+        color: gray;
+        text-decoration: underline;
+      }
+
+      .left img {
+        margin: auto;
+        width: 150px;
+      }
+
+      .left div {
+        font-family: "Baloo Bhai", sans-serif;
+        text-align: center;
+        font-size: large;
+      }
+
+      .btn {
+        border-radius: 20px;
+
+        padding: 4px 26px;
+      }
+
+      .right button {
+        border-radius: 20px;
+        cursor: pointer;
+        font-family: "Baloo Bhai", sans-serif;
+      }
+
+      .form {
+        border: 3px solid red;
+        width: 20%;
+        height: 400px;
+        position: absolute;
+        right: 200px;
+        top: 200px;
+        border-radius: 30px;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+          rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+          rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+      }
+      h3 {
+        text-align: center;
+      }
+      .form input {
+        display: block;
+        width: 200px;
+        margin: 2px auto;
+        padding: 7px;
+        border-radius: 30px;
+      }
+      .sub {
+        cursor: pointer;
+        color: black;
+        background-color: grey;
+      }
+      @media screen and (max-width: 700px) {
+      }
+    </style>
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="left">
+        <img
+          src="http://www.compassioninaction.info/wp-content/uploads/2015/10/yoga-logo.png"
+        />
+        <div>Meditation Center</div>
+      </div>
+      <div class="mid">
+        <ul class="navbar">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Yoga Exercises</a></li>
+          <li><a href="#">Schedule</a></li>
+          <li><a href="#">About us</a></li>
+        </ul>
+      </div>
+      <div class="right">
+        <div class="btn">
+          <button>Email us</button>
+          <button>Contact us</button>
+        </div>
+      </div>
+    </header>
+    <div class="form">
+      <form action="#">
+        <h3>Fill The Form</h3>
+        <div><input type="text" placeholder="Write your name" /></div>
+        <div><input type="text" placeholder=" Age" /></div>
+        <div><input type="text" placeholder=" Gender" /></div>
+        <div><input type="text" placeholder="Email" /></div>
+        <div><input type="text" placeholder="Address" /></div>
+        <div><input type="text" placeholder="Contact No." /></div>
+        <div><input class="sub" type="submit" /></div>
+      </form>
+    </div>
+  </body>
+</html>
