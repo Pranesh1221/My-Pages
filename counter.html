@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        text-align: center;
+      }
+      .sty h1:first-child {
+        color: teal;
+        font-size: 50px;
+      }
+      .sty h1:last-child {
+        color: blueviolet;
+        font-size: 50px;
+      }
+      #increase {
+        padding: 10px 30px;
+        border-radius: 15px;
+        color: white;
+        background-color: green;
+        border: 1px solid green;
+      }
+      #decrease {
+        padding: 10px 30px;
+        border-radius: 15px;
+        color: white;
+        background-color: red;
+        border: 1px solid red;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="sty">
+      <h1>
+        COUNTER
+        <h1 id="extact"></h1>
+      </h1>
+    </div>
+    <div class="btn">
+      <button id="increase">Increase</button>
+      <button id="decrease">Decrease</button>
+    </div>
+  </body>
+</html>
+<script>
+  document.querySelector("#increase").addEventListener("click", increaseit);
+  document.querySelector("#decrease").addEventListener("click", decreaseit);
+
+  var count = localStorage.getItem("counter", count) || 0;
+  var inc = document.querySelector("#extact");
+  inc.innerText = count;
+  function increaseit() {
+    count++;
+    inc.innerText = count;
+    localStorage.setItem("counter", count);
+  }
+  function decreaseit() {
+    count--;
+    inc.innerText = count;
+    localStorage.setItem("counter", count);
+  }
+</script>
